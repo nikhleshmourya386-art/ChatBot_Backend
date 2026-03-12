@@ -2,7 +2,8 @@
 
 node_modules/
 jspm_packages/
-
+# .env
+# node_modules
 # Logs
 
 logs
