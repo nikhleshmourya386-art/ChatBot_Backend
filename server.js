@@ -12,7 +12,6 @@
 // app.listen(port, () => {
 //   console.log("Server running on port 5000");
 // });
-
 import express from "express";
 import cors from "cors";
 import chatRoute from "./route/chat.js";
@@ -27,12 +26,5 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", chatRoute);
-
-if (process.env.NODE_ENV !== "production") {
-  const port = process.env.PORT||5000;
-  app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-  });
-}
 
 export default app;

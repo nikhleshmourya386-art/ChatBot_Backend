@@ -16,6 +16,7 @@ router.post("/chat", async (req, res) => {
 
   try {
 
+    
     const completion = await client.chat.completions.create({
       model: "moonshotai/kimi-k2-instruct-0905",
       messages: messages,
