@@ -12,6 +12,11 @@
 // app.listen(port, () => {
 //   console.log("Server running on port 5000");
 // });
+
+
+
+
+
 import express from "express";
 import cors from "cors";
 import chatRoute from "./route/chat.js";
@@ -27,4 +32,6 @@ app.get("/", (req, res) => {
 
 app.use("/api", chatRoute);
 
-export default app;
+export default function handler(req, res) {
+  return app(req, res);
+}
