@@ -8,7 +8,7 @@ dotenv.config()
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/ch",(req,res)=>{
+app.use("/",(req,res)=>{
   res.send("Hello from my Side 💛")
 })
 
